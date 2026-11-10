@@ -1,4 +1,4 @@
-# Pennywise
+# Argent
 
 Personal finance tracker. Privacy-first, upload-only ingestion, self-hosted.
 
@@ -28,7 +28,7 @@ See `personal_finance_tracker_prd.md` for the full product spec.
 fnm use                                    # Node 22
 pnpm install
 pnpm db:up                                 # Postgres 16 in Docker
-pnpm --filter @pennywise/api db:migrate    # apply migrations
+pnpm --filter @argent/api db:migrate    # apply migrations
 pnpm dev                                   # builds shared, then starts api + web
 ```
 
@@ -47,8 +47,8 @@ By default, `AUTH_MODE=dev` auto-logs in as the seeded household — no email re
 | `pnpm lint` / `pnpm format` | ESLint / Prettier |
 | `pnpm test` / `pnpm test:watch` | Vitest |
 | `pnpm db:up` / `db:down` / `db:logs` | Postgres 16 container |
-| `pnpm --filter @pennywise/api db:generate` | Drizzle migration gen |
-| `pnpm --filter @pennywise/api db:migrate` | apply migrations |
+| `pnpm --filter @argent/api db:generate` | Drizzle migration gen |
+| `pnpm --filter @argent/api db:migrate` | apply migrations |
 
 ## Features
 
@@ -97,7 +97,7 @@ fly secrets set \
   SMTP_PORT="465" \
   SMTP_USER="resend" \
   SMTP_PASS="re_..." \
-  SMTP_FROM="Pennywise <noreply@mcconnalino.com>" \
+  SMTP_FROM="Argent <noreply@mcconnalino.com>" \
   ANTHROPIC_API_KEY="sk-ant-..."
 
 fly deploy

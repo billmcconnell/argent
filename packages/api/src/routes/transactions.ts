@@ -2,7 +2,7 @@ import type { FastifyPluginAsync } from 'fastify';
 import { alias } from 'drizzle-orm/pg-core';
 import { and, count, desc, eq, gte, ilike, inArray, isNull, lt, or, sql } from 'drizzle-orm';
 import { z } from 'zod';
-import { splitUpsertSchema, transactionUpdateSchema } from '@pennywise/shared';
+import { splitUpsertSchema, transactionUpdateSchema } from '@argent/shared';
 import type { Db } from '../db/client.js';
 import { accounts, categories, categorizationRules, transactionEdits, transactionSplits, transactions } from '../db/schema.js';
 

@@ -148,7 +148,7 @@ export const exportRoutes: (db: Db) => FastifyPluginAsync = (db) => async (app) 
     ]);
 
     const exportedAt = new Date().toISOString();
-    const filename = `pennywise-backup-${exportedAt.slice(0, 10)}.json`;
+    const filename = `argent-backup-${exportedAt.slice(0, 10)}.json`;
 
     void reply.header('Content-Type', 'application/json; charset=utf-8');
     void reply.header('Content-Disposition', `attachment; filename="${filename}"`);

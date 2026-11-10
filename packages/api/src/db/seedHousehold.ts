@@ -1,5 +1,5 @@
 import { eq } from 'drizzle-orm';
-import { SEED_CATEGORIES } from '@pennywise/shared';
+import { SEED_CATEGORIES } from '@argent/shared';
 import { categories } from './schema.js';
 import type { Db } from './client.js';
 

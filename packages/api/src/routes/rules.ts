@@ -5,7 +5,7 @@ import {
   ruleApplyBodySchema,
   ruleCreateSchema,
   ruleUpdateSchema,
-} from '@pennywise/shared';
+} from '@argent/shared';
 import type { Db } from '../db/client.js';
 import { categories, categorizationRules, transactions } from '../db/schema.js';
 import { applyRules, sortRules, type RuleLike } from '../ingest/rules-engine.js';

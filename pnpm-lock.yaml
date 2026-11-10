@@ -50,7 +50,7 @@ importers:
       '@fastify/static':
         specifier: ^8.0.3
         version: 8.3.0
-      '@pennywise/shared':
+      '@argent/shared':
         specifier: workspace:*
         version: link:../shared
       csv-parse:
@@ -102,7 +102,7 @@ importers:
 
   packages/web:
     dependencies:
-      '@pennywise/shared':
+      '@argent/shared':
         specifier: workspace:*
         version: link:../shared
       '@tanstack/react-query':

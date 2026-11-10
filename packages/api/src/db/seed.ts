@@ -9,7 +9,7 @@ const DEV_HOUSEHOLD_NAME = 'Dev Household';
 const DEV_ACCOUNT_ID = '00000000-0000-0000-0000-000000000010';
 const DEV_ACCOUNT_NAME = 'Amex (dev)';
 const DEV_USER_ID = '00000000-0000-0000-0000-000000000020';
-const DEV_USER_EMAIL = 'dev@pennywise.local';
+const DEV_USER_EMAIL = 'dev@argent.local';
 
 async function seed(): Promise<void> {
   const config = loadConfig();

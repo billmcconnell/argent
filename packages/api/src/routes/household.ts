@@ -103,7 +103,7 @@ export const householdRoutes: (db: Db, config: AppConfig) => FastifyPluginAsync 
       .where(eq(users.email, email))
       .limit(1);
     if (existing) {
-      return reply.code(409).send({ error: 'This email already has a Pennywise account' });
+      return reply.code(409).send({ error: 'This email already has a Argent account' });
     }
 
     const now = new Date();
@@ -148,9 +148,9 @@ export const householdRoutes: (db: Db, config: AppConfig) => FastifyPluginAsync 
       await transporter.sendMail({
         from: config.SMTP_FROM,
         to: email,
-        subject: `You've been invited to join Pennywise`,
-        text: `You've been invited to join a Pennywise household.\n\nAccept the invitation:\n${acceptUrl}\n\nThis link expires in 7 days.`,
-        html: `<p>You've been invited to join a Pennywise household.</p><p><a href="${acceptUrl}">Accept invitation</a></p><p>This link expires in 7 days.</p>`,
+        subject: `You've been invited to join Argent`,
+        text: `You've been invited to join a Argent household.\n\nAccept the invitation:\n${acceptUrl}\n\nThis link expires in 7 days.`,
+        html: `<p>You've been invited to join a Argent household.</p><p><a href="${acceptUrl}">Accept invitation</a></p><p>This link expires in 7 days.</p>`,
       });
     } else {
       req.log.info({ acceptUrl }, 'invite link (SMTP not configured — use acceptUrl)');

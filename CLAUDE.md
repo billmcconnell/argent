@@ -37,7 +37,7 @@ Stack locked (do not re-propose alternatives): Node 22 + TypeScript, pnpm worksp
 
 - `packages/api` — Fastify server, Drizzle migrations (`drizzle/`), pg-boss jobs. Entry: `src/server.ts`.
 - `packages/web` — Vite + React SPA. Entry: `src/main.tsx`, `index.html`.
-- `packages/shared` — Zod schemas, types, category seed. Imported as `@pennywise/shared`.
+- `packages/shared` — Zod schemas, types, category seed. Imported as `@argent/shared`.
 
 ## Commands
 
@@ -49,8 +49,8 @@ Stack locked (do not re-propose alternatives): Node 22 + TypeScript, pnpm worksp
 | `pnpm lint` / `pnpm format` | ESLint / Prettier |
 | `pnpm test` / `pnpm test:watch` | Vitest |
 | `pnpm db:up` / `db:down` / `db:logs` | Postgres 16 container |
-| `pnpm --filter @pennywise/api db:generate` | Drizzle migration gen |
-| `pnpm --filter @pennywise/api db:migrate` | apply migrations |
+| `pnpm --filter @argent/api db:generate` | Drizzle migration gen |
+| `pnpm --filter @argent/api db:migrate` | apply migrations |
 
 Node version pinned `.nvmrc` (22). Use `fnm use` before install.
 

@@ -26,7 +26,7 @@ RUN corepack enable && corepack prepare pnpm@10.33.2 --activate
 
 WORKDIR /app
 
-# Workspace manifests needed so pnpm can resolve the @pennywise/shared symlink
+# Workspace manifests needed so pnpm can resolve the @argent/shared symlink
 COPY package.json pnpm-workspace.yaml pnpm-lock.yaml ./
 COPY packages/api/package.json    ./packages/api/
 COPY packages/shared/package.json ./packages/shared/

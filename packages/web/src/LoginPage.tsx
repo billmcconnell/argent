@@ -88,7 +88,7 @@ export function LoginPage() {
             className="font-bold text-white"
             style={{ fontFamily: 'var(--font-display)', fontSize: '3rem', letterSpacing: '-0.4px', lineHeight: 1 }}
           >
-            Pennywise
+            Argent
           </span>
         </div>
 

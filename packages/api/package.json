@@ -1,5 +1,5 @@
 {
-  "name": "@pennywise/api",
+  "name": "@argent/api",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -22,7 +22,7 @@
     "@fastify/multipart": "^10.0.0",
     "@fastify/sensible": "^6.0.2",
     "@fastify/static": "^8.0.3",
-    "@pennywise/shared": "workspace:*",
+    "@argent/shared": "workspace:*",
     "csv-parse": "^6.2.1",
     "drizzle-orm": "^0.38.2",
     "fastify": "^5.2.0",

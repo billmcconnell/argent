@@ -168,7 +168,7 @@ function AppShell({ onLogout, showLogout, isAdmin }: { onLogout: () => void; sho
               className="hidden text-base font-bold text-teal-900 sm:block"
               style={{ fontFamily: 'var(--font-display)' }}
             >
-              Pennywise
+              Argent
             </span>
           </div>
 

@@ -10,7 +10,7 @@ import type { Db } from '../db/client.js';
 import { seedHousehold } from '../db/seedHousehold.js';
 import './types.js';
 
-const COOKIE_NAME = 'pennywise_session';
+const COOKIE_NAME = 'argent_session';
 
 function hashToken(token: string): string {
   return crypto.createHash('sha256').update(token).digest('hex');
@@ -88,7 +88,7 @@ export function magicLinkPlugin(db: Db, config: AppConfig) {
         await transporter.sendMail({
           from: config.SMTP_FROM,
           to: email,
-          subject: 'Sign in to Pennywise',
+          subject: 'Sign in to Argent',
           text: `Click to sign in:\n${verifyUrl}\n\nThis link expires in 15 minutes.`,
           html: `<p>Click to sign in:</p><p><a href="${verifyUrl}">${verifyUrl}</a></p><p>This link expires in 15 minutes.</p>`,
         });
@@ -205,7 +205,7 @@ export function magicLinkPlugin(db: Db, config: AppConfig) {
         .limit(1);
 
       if (existingUser && existingUser.householdId !== invite.householdId) {
-        return reply.code(409).send({ error: 'This email already has a Pennywise account' });
+        return reply.code(409).send({ error: 'This email already has a Argent account' });
       }
 
       await db

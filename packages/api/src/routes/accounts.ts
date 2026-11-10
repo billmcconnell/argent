@@ -1,7 +1,7 @@
 import type { FastifyPluginAsync } from 'fastify';
 import { and, asc, eq, isNull, sql } from 'drizzle-orm';
 import { z } from 'zod';
-import { accountCreateSchema, accountUpdateSchema } from '@pennywise/shared';
+import { accountCreateSchema, accountUpdateSchema } from '@argent/shared';
 import type { Db } from '../db/client.js';
 import { accounts, transactions } from '../db/schema.js';
 

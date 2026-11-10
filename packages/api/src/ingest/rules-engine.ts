@@ -1,4 +1,4 @@
-import type { RuleMatchType } from '@pennywise/shared';
+import type { RuleMatchType } from '@argent/shared';
 
 export interface RuleLike {
   id: string;
